@@ -1,0 +1,26 @@
+import "base/common.proto";
+
+message VipIDAmount{
+    optional uint32 itemid = 1;
+    optional uint32 leftamount = 2;
+}
+
+
+message GS2CGetVipReward{
+    optional uint32 errcode = 1;
+    optional string errmsg = 2;
+}
+
+message GS2CGetVipDailyReward{
+
+}
+
+message GS2CVipBuyItem{
+    optional uint32 itemid = 1;
+    optional uint32 leftamount = 2;
+}
+
+message GS2CRequestLeftAmount{
+    repeated VipIDAmount info = 1;
+    optional uint32 hasGetDailyReward = 2;
+}

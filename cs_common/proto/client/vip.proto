@@ -1,0 +1,19 @@
+import "base/common.proto";
+
+
+message C2GSGetVipReward{
+    optional uint32 viplv = 1;
+}
+
+message C2GSGetVipDailyReward{
+    
+}
+
+message C2GSVipBuyItem{
+    optional uint32 itemid = 1;
+    optional uint32 itemamount = 2;
+}
+
+message C2GSRequestLeftAmount{
+    
+}
